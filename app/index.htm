@@ -1,0 +1,41 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>GraphHopper Map Matching Demo</title>
+        <script type="text/javascript" src="GraphHopper%20Map%20Matching%20Demo_files/jquery-2.js"></script>                
+        <script type="text/javascript" src="GraphHopper%20Map%20Matching%20Demo_files/togeojson.js"></script>
+        
+        <script type="text/javascript" src="GraphHopper%20Map%20Matching%20Demo_files/GHUtil.js"></script>
+
+        <link rel="stylesheet" href="GraphHopper%20Map%20Matching%20Demo_files/leaflet.css">
+        <script type="text/javascript" src="GraphHopper%20Map%20Matching%20Demo_files/leaflet.js"></script>        
+
+        <link rel="stylesheet" href="GraphHopper%20Map%20Matching%20Demo_files/style.css">
+
+        <script type="text/javascript" src="GraphHopper%20Map%20Matching%20Demo_files/demo.js"></script>
+    </head>
+    <body class="">        
+        <div id="main">
+<!--            <div id="logo" class="left">
+                <a href="https://graphhopper.com/">
+                    <img src="GraphHopper%20Map%20Matching%20Demo_files/header.png" alt="GraphHopper Logo">                                   
+                </a>
+</div>                         -->
+
+            <div id="map-matching" class="tab-content">
+
+                <div id="map-matching-response">success with 3.12% difference, distance 552 vs. original distance 570</div>
+                <div id="map-matching-error"></div>
+
+                <div id="map-matching-map" style="cursor: default; height: 600px; width: 800px; position: relative;" class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim" tabindex="0"><div class="leaflet-map-pane" style="transform: translate3d(10px, -35px, 0px);"><div class="leaflet-tile-pane"><div class="leaflet-layer" style="z-index: 1;"><div class="leaflet-tile-container"></div><div class="leaflet-tile-container leaflet-zoom-animated"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; transform: translate3d(179px, 154px, 0px);" src="GraphHopper%20Map%20Matching%20Demo_files/tile_007.png"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; transform: translate3d(435px, 154px, 0px);" src="GraphHopper%20Map%20Matching%20Demo_files/tile_003.png"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; transform: translate3d(179px, -102px, 0px);" src="GraphHopper%20Map%20Matching%20Demo_files/tile_012.png"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; transform: translate3d(435px, -102px, 0px);" src="GraphHopper%20Map%20Matching%20Demo_files/tile_010.png"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; transform: translate3d(179px, 410px, 0px);" src="GraphHopper%20Map%20Matching%20Demo_files/tile_002.png"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; transform: translate3d(435px, 410px, 0px);" src="GraphHopper%20Map%20Matching%20Demo_files/tile_008.png"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; transform: translate3d(-77px, 154px, 0px);" src="GraphHopper%20Map%20Matching%20Demo_files/tile_006.png"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; transform: translate3d(691px, 154px, 0px);" src="GraphHopper%20Map%20Matching%20Demo_files/tile.png"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; transform: translate3d(-77px, -102px, 0px);" src="GraphHopper%20Map%20Matching%20Demo_files/tile_004.png"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; transform: translate3d(691px, -102px, 0px);" src="GraphHopper%20Map%20Matching%20Demo_files/tile_009.png"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; transform: translate3d(-77px, 410px, 0px);" src="GraphHopper%20Map%20Matching%20Demo_files/tile_011.png"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; transform: translate3d(691px, 410px, 0px);" src="GraphHopper%20Map%20Matching%20Demo_files/tile_005.png"></div></div></div><div class="leaflet-objects-pane"><div class="leaflet-shadow-pane"></div><div class="leaflet-overlay-pane"><svg class="leaflet-zoom-animated" style="transform: translate3d(-70px, -10px, 0px);" width="920" height="690" viewBox="-70 -10 920 690"><g><path stroke-linejoin="round" stroke-linecap="round" stroke="black" stroke-opacity="0.9" stroke-width="2" fill="none" class="leaflet-clickable" d="M95 445L162 473L227 427L258 446L271 412L251 300L228 267L259 246L279 248L295 219L369 197L408 195L450 179L487 177L554 158L725 314L596 237L571 304L554 215L576 252"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" stroke="#00cc33" stroke-opacity="0.4" stroke-width="6" fill="none" class="leaflet-clickable" d="M112 505L310 454L289 420L259 356L231 266L475 189L481 207L619 165L664 323L662 330L664 353L662 330L664 323L619 165L481 207L475 189L252 261"></path></g></svg></div><div class="leaflet-marker-pane"></div><div class="leaflet-popup-pane"></div></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in leaflet-disabled" href="#" title="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out">-</a></div></div><div class="leaflet-top leaflet-right"><div class="leaflet-control-layers leaflet-control" aria-haspopup="true"><a class="leaflet-control-layers-toggle" href="#" title="Layers"></a><form class="leaflet-control-layers-list"><div class="leaflet-control-layers-base"><label><input class="leaflet-control-layers-selector" name="leaflet-base-layers" checked="checked" type="radio"><span> Omniscale</span></label><label><input class="leaflet-control-layers-selector" name="leaflet-base-layers" type="radio"><span> OpenStreetMap</span></label></div><div class="leaflet-control-layers-separator" style="display: none;"></div><div class="leaflet-control-layers-overlays"></div></form></div></div><div class="leaflet-bottom leaflet-left"><div class="leaflet-control-scale leaflet-control"><div class="leaflet-control-scale-line" style="width: 59px;">30 m</div><div class="leaflet-control-scale-line" style="width: 61px;">100 ft</div></div></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="http://leafletjs.com/" title="A JS library for interactive maps">Leaflet</a> | © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, © <a href="http://maps.omniscale.com/">Omniscale</a></div></div></div></div>
+            </div>
+            <br>
+            <br>
+            Vehicles: <input value="foot" id="vehicle-input" type="text">
+            <br>
+            GPS accuracy: <input value="41" id="accuracy-input" type="number">
+            <br>
+            <input id="matching-file-input" type="file">
+        </div>
+    
+</body></html>
